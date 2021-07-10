@@ -1,19 +1,21 @@
 # cpp_notes
 ## extern
 extern int i; // just declare i
+
 int j; // declare and define j
 
 file1.hpp
-int j = 3;
+`int j = 3;`
 
 file2.cpp
-#include "file1.hpp"
+```#include "file1.hpp"
 #include <iostream>
 extern int j;
 int main() {
     using namespace std;
     cout << j << endl;
 }
+```
   
 `output: 3`
   
