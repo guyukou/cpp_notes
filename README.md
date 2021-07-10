@@ -5,7 +5,9 @@ extern int i; // just declare i
 int j; // declare and define j
 
 file1.hpp
-`int j = 3;`
+```
+int j = 3;
+```
 
 file2.cpp
 ```#include "file1.hpp"
@@ -34,8 +36,9 @@ int main(){
 }
 
 ```
-  output: 999
-  refVal points the value referenced by i, so changes made to refVal directly reflected by i
+output: 999
+  
+refVal points the value referenced by i, so changes made to refVal directly reflected by i
 
 ## void *
 void * is a generic pointer which can points to any type of pointer
